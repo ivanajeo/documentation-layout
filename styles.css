@@ -100,7 +100,6 @@ adjust the header */
 }
 
 @media (max-width: 600px) {
-
     .main-header{
         position: absolute;
         top: 0;

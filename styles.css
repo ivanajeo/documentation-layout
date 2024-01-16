@@ -1,121 +1,143 @@
+/* css reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9fafb;
-    color: #3f3f46;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
-/* the space for big nav box, 
-set the position and the area for the big nav box. */
-.main-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 275px;
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
+
+/* whole page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* the big nav box, 
-set the border for the big nav box */
-.main-header .nav-bar {
-    height: 100%;
-    border-right: 2.5px solid #a1a1aa;
+
+/* navigation bar */
+.nav-bar {
+  position: fixed;
+  width: 270px;
+  height: 100vh;
+  border-right: 3px solid rgb(157, 157, 157);
 }
 
-/* the header of the big nav bar,
-adjust the header */
-.main-header .nav-bar>p {
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color: #09090b;
+.nav-bar__header {
+  border-bottom: 1px solid black;
+  font-size: 1.65rem;
+  text-align: center;
+  padding: 0.5rem 1.5rem;
 }
 
-/* the block of all the navigation button */
-.main-header .nav-bar ul {
-    width: 100%;  
+.nav-bar__link {
+  border-bottom: 1px solid black;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
 }
 
-/* the individual navigation button */
-.main-header .nav-bar ul li {
-    list-style: none;
-    display: block;
-    border-top: 1.5px solid #71717a;
-    padding: .8rem 0 .8rem 1.5rem;
+.nav-bar__link--last {
+  border-bottom: none;
 }
 
-/* the link of the navigation button */
-.main-header .nav-bar ul li a {
-    text-decoration: none;
-    color: #3f3f46;
-    cursor: pointer;
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(98, 98, 98);
 }
 
-/* the main document section */
-.main-doc {
-    position: relative;
-    margin-left: 310px;
-    margin-right: 40px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+
+/* content */
+.contents {
+  position: relative;
+  margin-left: 275px;
+  padding: 2rem;
+
+  color: rgb(98, 98, 98);
+  font-size: 0.85rem;
 }
 
-/* target the header of every article in main document */
-.main-doc header {
-    font-size: 1.6rem;
-    color: #09090b;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.content__header {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: black;
 }
 
-/* target the whole block of every article in main document */
-.main-doc article {
-    margin-left: 20px;
+.content p {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
-/* target every paragraph of every article in main document */
-.main-doc article p {
-    margin-bottom: 1rem;
+.content li {
+  margin-bottom: 1rem;
+  margin-left: 4rem;
 }
 
-/* target the whole block of lists of every article in main document */
-.main-doc article ul {
-    margin-left: 50px;
+code {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 4rem;
+
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  height: auto;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5rem;
 }
 
-/* target every code block on every article in main document */
-.main-doc article code {
-    display: block;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    border-radius: 7px;
-    margin-bottom: .7rem;;
+
+/* attribution */
+.attribution {
+  margin-top: 3rem;
+  font-size: 0.95rem;
+  color: black;
 }
 
+.attribution a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.attribution a:is(:hover, :focus) {
+  color: blue;
+}
+
+/* media query */
 @media (max-width: 600px) {
-    .main-header{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        max-height: 250px;
-        border: 2.5px solid black;
-    }
+  .nav-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 0;
+  }
 
-    .nav-bar {
-        width: 100%;
-    }
-
-    .main-doc {
-        position: relative;
-        margin-left: 0;
-        padding: 2rem 1rem;
-        margin-top: 215px;
-    }
+  .nav-bar__links {
+    overflow-y: scroll;
+    border-top: 3px solid rgb(157, 157, 157);
+    border-bottom: 3px solid rgb(157, 157, 157);
+    height: 232px;
+  }
+  
+  .contents {
+    margin-left: 0;
+    margin-top: 270px;
+  }
 }

@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Technical Documentation Page | freecodecamp Challenge</title>
+    <link rel="shortcut icon" href="images/book-icon.svg" type="image/x-icon">
+    <title>Technical Documentation Page | Challenge | freecodecamp</title>
 </head>
 <body>
     <main>
         <div class="outer">
             <div class="nav-bar">
-                <div class="nav-bar__header">JS Documentation</div>
+                <div class="nav-bar__header" onclick="location.href='#top'">JS Documentation</div>
                 <div class="nav-bar__links">
                     <a href="#introduction"><div class="nav-bar__link">Introduction</div></a>
                     <a href="#what_you_should_already_know"><div class="nav-bar__link">What you should already know</div></a>
@@ -29,6 +30,7 @@
                 </div>
             </div>
             </div>
+            <a id="top"></a>
             <div class="contents">
                 <section class="content" id="introduction">
                     <h2 class="content__header">Introduction</h2>
@@ -97,7 +99,7 @@
                 </section>
 
                 <section class="content" id="global_variables">
-                    <h2 class="content_header">Global variables</h2>
+                    <h2 class="content__header">Global variables</h2>
                     <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
                     <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
                 </section>
@@ -196,7 +198,7 @@
                     </ul>
                 </section> 
                 <section class="attribution">
-                    <p>Challenge by <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page" target="_blank">freecodecamp</a>. Coded by <a href="#">ivanajeo</a>.</p>
+                    <p><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page" target="_blank" rel="noopener noreferrer">freecodecamp</a> Challenge. Coded by <a href="https://github.com/ivanajeo/documentation-layout"  rel="noopener noreferrer" target="_blank" class="githubProfile">ivanajeo</a>.</p>
                 </section>
             </div>
            

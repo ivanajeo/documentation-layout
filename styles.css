@@ -37,17 +37,29 @@ body {
 }
 
 .nav-bar__header {
+  cursor: pointer;
   border-bottom: 1px solid black;
-  font-size: 1.65rem;
+  font-size: 1.62rem;
   text-align: center;
   padding: 0.5rem 1.5rem;
 }
 
+.nav-bar__header:hover {
+  color: black;
+    font-size: 1.68rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
 .nav-bar__link {
   border-bottom: 1px solid black;
   font-size: 0.9rem;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
+}
+
+.nav-bar__link:hover {
+  color: black;
+  font-weight: 600;
 }
 
 .nav-bar__link--last {
@@ -66,13 +78,13 @@ body {
   margin-left: 275px;
   padding: 2rem;
 
-  color: rgb(98, 98, 98);
+  color: rgb(80, 80, 80);
   font-size: 0.85rem;
 }
 
 .content__header {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.55rem;
   margin-bottom: 1rem;
   color: black;
 }
@@ -107,17 +119,23 @@ code {
 .attribution {
   margin-top: 3rem;
   font-size: 0.95rem;
-  color: black;
+  color: white;
+
+  text-align: center;
+  background-color: rgb(37, 37, 37);
+  border-radius: 5px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .attribution a {
   text-decoration: none;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
 .attribution a:is(:hover, :focus) {
-  color: blue;
+  color: rgb(68, 193, 255);
 }
 
 /* media query */

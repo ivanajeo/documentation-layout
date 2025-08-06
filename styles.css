@@ -51,7 +51,7 @@ body {
 .nav-bar__header:hover {
   color: black;
     font-size: 1.68rem;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 
 }
 .nav-bar__link {

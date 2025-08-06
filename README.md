@@ -28,7 +28,7 @@ Designed with timeless elegance, this layout combines functionality with aesthet
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/ivanajeo/documentation-layout.git
-   cd etch-a-sketch
+   cd documentation-layout
    ```
 2. **Open** `index.html` **in your browser** <br />
 
